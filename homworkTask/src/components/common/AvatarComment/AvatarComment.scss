@@ -1,0 +1,90 @@
+@import '../../../assets/utill.scss';
+
+.AvatarComment-container {
+  width: 100%;
+
+  & + & {
+    margin-top: 1.5rem;
+  }
+
+  .AvatarComment {
+    font-family: YoonGothicPro740;
+
+    &-speak {
+      margin-bottom: 0.5rem;
+
+      &-area {
+        border-radius: 5px;
+        padding: 1.5rem;
+        color: #2e303b;
+        font-size: 0.95rem;
+      }
+      &-tip-right, &-tip-left {
+        height: 10px;
+      }
+
+      &-tip-right {
+        display: flex;
+        justify-content: flex-end;
+      }
+      &-tip-left {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      &-tip-square {
+        $squareSize: 0.6rem;
+        width: 0px;height: 0px;
+        transform: rotate(180deg);
+        border-top: $squareSize solid none;
+        border-bottom: $squareSize solid red;
+        border-right: $squareSize solid transparent;
+        border-left: $squareSize solid  transparent;
+      }
+    }
+
+    &-user-right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+
+      &-name {
+        font-size: 0.8rem;
+        margin-right: 1rem;
+        color: #6a6a6a;
+      }
+      &-img {
+        
+        & > img {
+          
+          @include media('<medium') {
+            width: 3rem;
+          }
+        }
+      }
+    }
+    &-user-left {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: flex-end;
+
+      &-name {
+        font-family: YoonGothicPro740;
+        font-size: 0.8rem;
+        margin-left: 1rem;
+        color: #6a6a6a;
+      }
+      &-img {
+        
+        & > img {
+          
+          @include media('<medium') {
+            width: 3rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+@import '../../../assets/colors.scss';
+
+.ProductCard-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ProductCard {
+  width: 288px;
+  height: 363px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 1rem;
+  margin: 1rem;
+
+  &-header {
+    margin-bottom: 1rem;
+
+    &-category {
+      font-weight: 700;
+      text-align: center;
+      color: $baseLightColor;
+      font-family: YoonGothicPro740;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &-title {
+      font-family: HGGGothicssi60g;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #2e303b;
+    }
+  }
+
+  &-desc {
+    flex: 1;
+    font-family: YoonGothicPro740;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6a6a6a;
+  }
+
+  &-amount {
+    margin-top: 1rem;
+
+    &-title {
+      font-family: YoonGothicPro740;
+      font-size: 1rem;
+      color: #6a6a6a;
+      margin-bottom: 0.8rem;
+
+      & > span {
+        margin-left: 0.5rem;
+        color: #000000;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &-result {
+    flex: 2;
+    margin-top: 1rem;
+
+    &-col {
+      margin-bottom: 0.8rem;
+      font-family: YoonGothicPro740;
+      display: flex;
+      flex-direction: row;
+
+      & > * {
+        flex: 1;
+      }
+
+      &-title {
+        font-size: 0.8rem;
+      }
+
+      &-value {
+        font-size: 0.8rem;
+        text-align: right;
+      }
+
+      & span {
+        font-size: 1rem;
+        color: #000000;
+        font-weight: 700;
+      }
+    }
+  }
+}

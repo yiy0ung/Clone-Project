@@ -1,0 +1,31 @@
+@import '../../../assets/colors.scss';
+
+.ProductCardList {
+
+  &-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    max-width: 95rem;
+    
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 8px;
+      background: $baseBoldColor;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      border-radius: 8px;
+      background: $baseLightColor;
+    }
+
+    & > * {
+      flex: 1;
+    }
+  }
+}

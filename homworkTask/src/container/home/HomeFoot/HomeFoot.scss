@@ -1,0 +1,10 @@
+@import '../../../assets/utill.scss';
+
+.HomeFoot {
+  margin: 0;
+
+  @include media('<medium') {
+    padding-top: 5rem;
+  }
+}
+

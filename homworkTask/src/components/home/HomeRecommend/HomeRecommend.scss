@@ -1,0 +1,47 @@
+@import '../../../assets/utill.scss';
+@import '../../../assets/colors.scss';
+
+.HomeRecommend-container {
+  max-width: 45rem;
+  margin: 0 auto 10%;
+
+  @include media('<medium') {
+    padding: 0.6rem;
+  }
+
+  .HomeRecommend {
+    position: relative;
+
+    &-title {
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $baseLightColor;
+      padding: 1rem;
+      background-color: #fff;
+      text-align: center;
+      font-size: 1.8rem;
+      font-family: HGGGothicssi60g;
+
+      @include media('<medium') {
+        font-size: 1.2rem;
+        padding: 0.4rem;
+      }
+
+      @include media('<small') {
+        font-size: 0.9rem;
+        
+      }
+    }
+
+    &-content {
+      padding: 3rem;
+      border: 4px solid $baseLightColor;
+
+      @include media('<medium') {
+        padding: 2rem 1rem 2rem;
+      }
+    }
+  }
+}

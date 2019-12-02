@@ -1,0 +1,41 @@
+@import '../../../assets/colors.scss';
+@import '../../../assets/utill.scss';
+
+.HomeCalc {
+  height: 80%;
+  background: linear-gradient($baseLightColor 80%, #ffffff 20%);
+
+  @include media('<medium') {
+    height: 90%;
+    background: $baseLightColor;
+  }
+
+  &-inputArea {
+
+    &-title {
+      padding: 3rem 0 2rem;
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      text-align: center;
+      color: #ffffff;
+      font-family: HGGGothicssi60g;
+
+      @include media('<medium') {
+        font-size: 1.3rem;
+      }
+    }
+
+    &-form {
+      max-width: 30rem;
+      margin: 0 auto 0;
+
+      @include media('<medium') {
+        padding: 0 0.8rem;
+      }
+    }
+  }
+
+  &-products {
+    margin-top: 2rem;
+  }
+}

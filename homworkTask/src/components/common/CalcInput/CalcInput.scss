@@ -1,0 +1,62 @@
+@import '../../../assets/utill.scss';
+
+.CalcInput {
+  color: #ffffff;
+
+  &-title {
+    font-family: YoonGothicPro740;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: row;
+
+    @include media('<medium') {
+      flex-direction: column;
+    }
+
+    &-input {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #ffffff;
+      margin-right: 1rem;
+
+      @include media('<medium') {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+
+      &-area {
+        padding-bottom: 0.5rem;
+        width: 85%;
+        color: #ffffff;
+        font-size: 1.5rem;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0);
+        border: 0;
+
+        @include media('<medium') {
+          font-size: 1rem;
+        }
+
+        &::placeholder {
+          color: rgba($color: #ffffff, $alpha: 0.5)
+        }
+      }
+
+      &-text {
+        color: #ffffff;
+        font-size: 1.5rem;
+
+        @include media('<medium') {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

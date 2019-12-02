@@ -1,0 +1,68 @@
+@import '../../../assets/colors.scss';
+@import '../../../assets/utill.scss';
+
+
+.HomeStats {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & > * + * {
+    margin-top: 2.4rem;
+  }
+
+  &-title {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    font-family: HGGGothicssi60g;
+
+    @include media('<medium') {
+      font-size: 1.3rem;
+    }
+    
+    &-mark {
+      margin-top: -28px;
+      min-width: 310px;
+      height: 10px;
+      background-color: #f8e71c;
+    }
+  }
+
+  &-info {
+    font-family: YoonGothicPro740;
+    text-align: center;
+    line-height: 2.3rem;
+    font-size: 1.2rem;
+
+    @include media('<medium') {
+      font-size: 0.9rem;
+    }
+
+    &-highlight {
+      font-weight: bold;
+      color: $baseLightColor;
+      font-size: 1.5rem;
+      margin-right: 5px;
+
+      @include media('<medium') {
+        font-size: 1.2rem;
+      }
+    }
+
+    &-img {
+      width: auto;
+  
+      @include media('<medium') {
+        width: 460px;
+      }
+
+      @include media('<small') {
+        width: 320px;
+      }
+    }
+  }
+}
+

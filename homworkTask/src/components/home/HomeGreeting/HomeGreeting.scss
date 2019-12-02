@@ -1,0 +1,140 @@
+@import '../../../assets/colors.scss';
+@import '../../../assets/utill.scss';
+
+.HomeGreeting {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &-top {
+    height: 65vh;
+    background-image: url('../../../assets/img/img_topbg.png');
+    background-size: cover;
+    background-position: 50%;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      margin-top: -10rem;
+      color: #ffffff;
+  
+      &-slogan {
+        margin-top: -10rem;
+
+        @include media('<medium') {
+          margin-top: -15rem;
+        }
+  
+        & > * {
+          text-align: center;
+        }
+  
+        &-title {
+          font-family: HGGGothicssi60g;
+          font-size: 3rem;
+
+          @include media('<medium') {
+            font-size: 2rem;
+          }
+        }
+  
+        &-sub {
+          margin-bottom: 0.6rem;
+          font-family: YoonGothicPro740;
+          font-size: 1.5rem;
+
+          @include media('<medium') {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  &-recommend {
+    height: 35vh;
+    background-color: $baseColor;
+
+    &-phoneImg {
+      display: flex;
+      justify-content: center;
+
+      &-img {
+        z-index: 1000;
+        margin-top: -17.5rem;
+        width: 25rem;
+
+        @include media('<medium') {
+          margin-top: -17.5rem;
+          width: 20rem;
+        }
+      }
+    }
+
+    &-welcome {
+      margin: 1rem 0 1rem;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &-sub {
+        font-family: HGGGothicssi40g;
+        font-size: 1.5rem;
+
+        @include media('<medium') {
+          font-size: 1rem;
+        }
+      }
+
+      &-title {
+        margin-top: 0.5rem;
+        font-family: HGGGothicssi60g;
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+
+        @include media('<medium') {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    &-getStart {
+      max-width: 25rem;
+      margin: 1rem auto;
+
+      @include media('<medium') {
+        display: none;
+      }
+    }
+
+    &-foot {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-btnDown {
+        cursor: pointer;
+        width: 3rem;
+        height: 3rem;
+        margin-top: 1.5rem;
+
+        &:hover {
+          animation: animatedbubble .3s ease-in ;
+        }
+      }
+    }
+
+  }
+}
+
+@keyframes animatedbubble {
+  0%{transform:translateY(5px);}
+  50%{transform:translateY(-10px);}
+  100%{transform:translateY(5px);}
+}

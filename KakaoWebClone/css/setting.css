@@ -1,0 +1,37 @@
+
+.settings {
+  border-top: 1px solid #f7f7f7;
+}
+
+.settings__sections {
+  padding: 25px 0 0;
+}
+
+.settings__sections + .settings__sections {
+  margin-top: 25px;
+  border-top: 1px solid #f7f7f7;
+}
+
+
+/* setting */
+.setting {
+  display: flex;
+  align-items: center;
+}
+
+.setting + .setting {
+  margin: 26px 0 0;
+}
+
+.setting .setting__icon {
+  font-size: 18px;
+}
+
+.setting .setting__title {
+  margin-left: 12px;
+}
+
+.setting .setting__version {
+  flex: 1;
+  text-align: right;
+}

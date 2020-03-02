@@ -1,0 +1,26 @@
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.header .header__title {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header .header__icon {
+  cursor: pointer;
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+.header .header__back-btn {
+  text-decoration: none;
+  font-size: 22px;
+  margin-right: 14px;
+}
